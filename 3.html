@@ -3,17 +3,51 @@
 <head>
 <title>My literature - odysseia</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script src="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html">My literature</a></h1>
-<ol>
-    <li><a href="1.html">mobydick</a></li>
-    <li><a href="2.html">commedia</a></li>
-    <li><a href="3.html">odysseia</a></li>
-</ol>
-<h2>오뒷세이아에 관해서</h2>
-<p>
-《오디세이아》(고대 그리스어: Ὀδύσσεια 오뒤세이아[*], 그리스어: Οδύσσεια 오디시아[*])는 고대 그리스의 서사시로서 저자는 일반적으로 일리아스의 저자인 호메로스로 전해지고 있다. 시의 주제는 트로이아 전쟁 영웅 오디세우스의 10년간에 걸친 귀향 모험담이다. 때문에 서양 문학사에서는 모험담의 원형으로 주목된다. 일리아스와 마찬가지로 시는 총 24편으로 나뉘며, 6각운(Hexametre)로 작곡되었다. 
-</p>
+<div id="grid">
+    <ol>
+        <a href="1.html"><li>mobydick</li></a>
+        <a href="2.html"><li>commedia</li></a>
+        <a href="3.html"><li>odysseia</li></a>
+    </ol>
+    <div id="article">
+        <h2>오뒷세이아에 관해서</h2>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UdyXlUmD3v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </p>
+        <p>
+        《오디세이아》(고대 그리스어: Ὀδύσσεια 오뒤세이아[*], 그리스어: Οδύσσεια 오디시아[*])는 고대 그리스의 서사시로서 저자는 일반적으로 일리아스의 저자인 호메로스로 전해지고 있다. 시의 주제는 트로이아 전쟁 영웅 오디세우스의 10년간에 걸친 귀향 모험담이다. 때문에 서양 문학사에서는 모험담의 원형으로 주목된다. 일리아스와 마찬가지로 시는 총 24편으로 나뉘며, 6각운(Hexametre)로 작곡되었다. 
+        </p>
+        <p>
+            <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://my-literature.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+    <input id="nightday" type="button" value='night' onclick="
+    nightdayHandler(this);
+    ">
+    </div>
+</div>
 </body>
 </html>
